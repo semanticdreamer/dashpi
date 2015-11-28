@@ -3,6 +3,7 @@ $(function() {
   // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
   Dashing.widget_base_dimensions = [145, 145]
   Dashing.numColumns = 5
+  Dashing.cycleDashboards({timeInSeconds: 0, stagger: true, page: 1});
 });
 </script>
 
@@ -12,8 +13,30 @@ $(function() {
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-view="Clock"></div>
     </li>
+
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
       <div data-id="pingdom" data-view="Pingdom" data-title="Pingdom"></div>
+    </li>
+
+    <li data-row="3" data-col="5" data-sizex="1" data-sizey="1">
+      <div data-id="cpage1" data-view="Changepage" data-icon="icon-arrow-right" data-title="About" data-page="2" data-stagger="false" data-fasttransition="true" style="background-color: #4b4b4b;"></div>
+    </li>
+  </ul>
+</div>
+
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="cpage2" data-view="Changepage" data-icon="icon-arrow-left" data-title="Back" data-page="1" data-fasttransition="true" style="background-color: #4b4b4b;"></div>
+    </li>
+
+    <li data-row="1" data-col="2" data-sizex="4" data-sizey="1">
+      <div data-id="welcome" data-view="Text" data-title="Dashpi" data-text="A shiny 7″ dashboard for the Raspberry Pi."></div>
+    </li>
+
+    <li data-row="2" data-col="1" data-sizex="5" data-sizey="1">
+      <div data-view="Image" data-image="/pi_armed_with_docker.jpg" data-width="725" data-height="250" style="background-color: #000;"></div>
+      <i class="icon-dashboard icon-background icon-large"></i>
     </li>
   </ul>
 </div>
