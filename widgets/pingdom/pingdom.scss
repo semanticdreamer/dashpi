@@ -1,13 +1,38 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color:  #4b4b4b;
+$background-color:  #A0BC3B;
 
 // ----------------------------------------------------------------------------
 // Widget-clock styles
 // ----------------------------------------------------------------------------
-.widget-clock {
+.widget-pingdom {
 
   background-color: $background-color;
+
+  .check {
+    float: left;
+    padding: 4px 0px;
+    width:100%
+  }
+
+  .check[data-state="up"] {
+  }
+
+  .check[data-state="down"] {
+    background-color: #B72126;
+  }
+
+  .check span {
+    padding: 0px 4px;
+  }
+
+  .checkName {
+    float: left
+  }
+
+  .checkPing {
+    float: right
+  }
 
 }
