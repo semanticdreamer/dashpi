@@ -98,6 +98,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.1)
+    xml-simple (1.1.5)
 
 PLATFORMS
   ruby
@@ -107,6 +108,7 @@ DEPENDENCIES
   dotenv
   rest-client
   twitter (>= 5.9.0)
+  xml-simple
 
 BUNDLED WITH
    1.10.6
