@@ -2,7 +2,7 @@ require 'json'
 require 'net/http'
 require 'xmlsimple'
 
-speedtest_cli = File.dirname(__FILE__) + '/../lib/speedtest-cli --simple --secure'
+speedtest_cli = File.dirname(__FILE__) + '/../lib/speedtest-cli --simple'
 speedtest_config_url = 'https://www.speedtest.net/speedtest-config.php'
 
 last_speedtest_ping = 0
