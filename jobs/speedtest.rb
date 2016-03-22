@@ -8,7 +8,7 @@ speedtest_config_url = 'https://www.speedtest.net/speedtest-config.php'
 last_speedtest_ping = 0
 
 # :first_in sets how long it takes before the job is first run. In this case, it is run immediately
-SCHEDULER.every '3m', :first_in => 0 do |job|
+SCHEDULER.every '15m', :first_in => 0 do |job|
   # speedtest-cli (https://github.com/sivel/speedtest-cli), a Python 
   # command line interface for testing internet bandwidth using speedtest.net
   speedtest_result = `#{speedtest_cli}`
