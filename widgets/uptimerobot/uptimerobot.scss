@@ -19,8 +19,10 @@ $background-color:  #12b0c5;
 
   .monitor {
     float: left;
-    margin: 2px;
-    width:100%
+    margin: 4px;
+    width:100%;
+    // list-style-position:inside;
+    // border-bottom: 1px solid #fff;
   }
 
   .monitor[data-status="0"], .monitor[data-status="1"] {
@@ -55,7 +57,7 @@ $background-color:  #12b0c5;
   .monitorType {
     float: left;
     color: #fff;
-    background-color: #4b4b4b;
+    background-color: $background-color;
     font-weight: 100;
     width: 80px;
     text-align: center;
@@ -69,7 +71,7 @@ $background-color:  #12b0c5;
   .monitorUrl {
     float: right;
     color: #fff;
-    background-color: #4b4b4b;
+    background-color: $background-color;
     font-weight: 100;
     width: 300px;
     text-align: right;
