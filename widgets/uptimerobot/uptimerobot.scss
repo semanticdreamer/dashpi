@@ -1,0 +1,82 @@
+// Monitor Status Codes
+// 0 - paused
+// 1 - not monitored yet
+// 2 - up
+// 8 - seems down
+// 9 - down
+
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #12b0c5;
+
+// ----------------------------------------------------------------------------
+// Widget-clock styles
+// ----------------------------------------------------------------------------
+.widget-uptimerobot {
+
+  background-color: $background-color;
+
+  .monitor {
+    float: left;
+    margin: 2px;
+    width:100%
+  }
+
+  .monitor[data-status="0"], .monitor[data-status="1"] {
+      background-color: #4b4b4b;
+  }
+
+  .monitor[data-status="2"] {
+      background-color: #A0BC3B;
+  }
+
+  .monitor[data-status="8"] {
+    background-color: #eb9c3c;
+  }
+  
+  .monitor[data-status="9"] {
+    background-color: #B72126;
+  }
+
+  .monitor span {
+    padding: 0px 4px;
+  }
+
+  .monitorAlltimeuptimeratio {
+    float: left;
+    color: #fff;
+    background-color: #A0BC3B;
+    font-weight: 600;
+    width: 80px;
+    text-align: center;
+  }
+
+  .monitorType {
+    float: left;
+    color: #fff;
+    background-color: #4b4b4b;
+    font-weight: 100;
+    width: 80px;
+    text-align: center;
+  }
+
+  .monitorFriendlyname {
+    float: left;
+    font-weight: 600;
+  }
+  
+  .monitorUrl {
+    float: right;
+    color: #fff;
+    background-color: #4b4b4b;
+    font-weight: 100;
+    width: 300px;
+    text-align: right;
+  }
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+}

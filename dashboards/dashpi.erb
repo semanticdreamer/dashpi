@@ -3,7 +3,7 @@ $(function() {
   // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
   Dashing.widget_base_dimensions = [150, 150]
   Dashing.numColumns = 5
-  Dashing.cycleDashboards({timeInSeconds: 0, stagger: true, fastTransition: true, page: 1});
+  Dashing.cycleDashboards({timeInSeconds: 20, stagger: true, fastTransition: true, page: 1});
 });
 </script>
 
@@ -13,9 +13,9 @@ $(function() {
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-view="Clock"></div>
     </li>
-
+    
     <li data-row="1" data-col="2" data-sizex="2" data-sizey="1">
-      <div data-id="pingdom" data-view="Pingdom" data-title="Pingdom"></div>
+      <div data-id="welcome" data-view="Text" data-title="Dashpi" data-text="Hej!"></div>
     </li>
     
     <li data-row="1" data-col="4" data-sizex="2" data-sizey="1">
@@ -42,22 +42,26 @@ $(function() {
 
 <div class="gridster">
   <ul>
+    <li data-row="1" data-col="1" data-sizex="5" data-sizey="3">
+      <div data-id="uptimerobot" data-view="Uptimerobot" data-title="Uptime Robot"></div>
+    </li>
+  
     <!--li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="cpage2" data-view="Changepage" data-icon="icon-arrow-left icon-large" data-title="Back" data-page="1" data-fasttransition="true"></div>
     </li-->
 
-    <li data-row="1" data-col="1" data-sizex="5" data-sizey="1">
+    <!--li data-row="1" data-col="1" data-sizex="5" data-sizey="1">
       <div data-id="welcome" data-view="Text" data-title="Dashpi" data-text="A shiny 7″ dashboard for the Raspberry Pi."></div>
-    </li>
+    </li-->
     
     <!--li data-row="2" data-col="1" data-sizex="1" data-sizey="2">
       <div data-id="welcome" data-view="Text" data-title="System Info" data-text="Raspberry Pi" data-moreinfo="1 Model A+"></div>
     </li-->
 
-    <li data-row="2" data-col="1" data-sizex="5" data-sizey="1">
+    <!--li data-row="2" data-col="1" data-sizex="5" data-sizey="1">
       <div data-view="Image" data-image="/pi_armed_with_docker.jpg" data-width="580" data-height="250" style="background-color: #000;"></div>
       <!--i class="icon-dashboard icon-background icon-large"></i-->
       <!--i class="icon-heart icon-background icon-large"></i-->
-    </li>
+    </li-->
   </ul>
 </div>
