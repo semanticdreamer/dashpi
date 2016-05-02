@@ -6,9 +6,13 @@ Dashing dashboard w/ clock, UptimeRobot.com and speedtest.net (IP, Ping, Up-/ Do
 
 ![](dashpi_screen_shot.png)
 
-**Screen shot of 2nd page**
+**Screen shot of 2nd page, all websites up**
 
 ![](dashpi_screen_shot_page2.png)
+
+**Screen shot of 2nd page, some websites down**
+
+![](dashpi_screen_shot_page2_down.png)
 
 The dashboard is intended for deployment w/ Docker (leveraging [rpi-dashing](https://github.com/openwebcraft/rpi-dashing)) on a Raspberry Pi 1 Model A+ ARM hardware and for rendering the dashboard on the 7″ Touchscreen Monitor for Raspberry Pi.
 
